@@ -1,6 +1,6 @@
-#include "Foxy.h"
+#include "FoxyModel.h"
 
-  public Foxy()
+FoxyModel::FoxyModel()
   {
     textureWidth = 128;
     textureHeight = 64;
