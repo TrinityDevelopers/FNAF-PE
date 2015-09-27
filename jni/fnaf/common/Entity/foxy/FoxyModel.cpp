@@ -1,340 +1,298 @@
 #include "FoxyModel.h"
 
 FoxyModel::FoxyModel()
-  {
-    textureWidth = 128;
-    textureHeight = 64;
-    
-      Shape1 = new ModelPart(this, 0, 0);
-      Shape1.addBox(-1.5F, 0F, -6F, 3, 1, 6);
-      Shape1.setRotationPoint(-2F, 23F, 4F);
-      Shape1.setTextureSize(128, 64);
-      Shape1.mirror = true;
-      setRotation(Shape1, 0F, 0F, 0F);
-      Shape2 = new ModelPart(this, 0, 0);
-      Shape2.addBox(-1.5F, 0F, -6F, 3, 1, 6);
-      Shape2.setRotationPoint(2F, 23F, 4F);
-      Shape2.setTextureSize(128, 64);
-      Shape2.mirror = true;
-      setRotation(Shape2, 0F, 0F, 0F);
-      Shape3 = new ModelPart(this, 0, 18);
-      Shape3.addBox(-0.5F, 0F, -0.7F, 1, 6, 1);
-      Shape3.setRotationPoint(-2F, 17F, 2F);
-      Shape3.setTextureSize(128, 64);
-      Shape3.mirror = true;
-      setRotation(Shape3, 0.122173F, 0F, 0F);
-      Shape4 = new ModelPart(this, 0, 18);
-      Shape4.addBox(-0.5F, 0F, -0.7F, 1, 6, 1);
-      Shape4.setRotationPoint(2F, 17F, 2F);
-      Shape4.setTextureSize(128, 64);
-      Shape4.mirror = true;
-      setRotation(Shape4, 0.122173F, 0F, 0F);
-      Shape5 = new ModelPart(this, 0, 44);
-      Shape5.addBox(-1F, 0F, -2.5F, 2, 3, 2);
-      Shape5.setRotationPoint(-2F, 15F, 2.5F);
-      Shape5.setTextureSize(128, 64);
-      Shape5.mirror = true;
-      setRotation(Shape5, 0F, 0F, 0F);
-      Shape6 = new ModelPart(this, 0, 44);
-      Shape6.addBox(-1F, 0F, -2.5F, 2, 3, 2);
-      Shape6.setRotationPoint(2F, 15F, 2.5F);
-      Shape6.setTextureSize(128, 64);
-      Shape6.mirror = true;
-      setRotation(Shape6, 0F, 0F, 0F);
-      Shape7 = new ModelPart(this, 0, 53);
-      Shape7.addBox(-3.5F, 0F, -2.5F, 7, 2, 5);
-      Shape7.setRotationPoint(0F, 9.466666F, 1.7F);
-      Shape7.setTextureSize(128, 64);
-      Shape7.mirror = true;
-      setRotation(Shape7, 0F, 0F, 0F);
-      Shape8 = new ModelPart(this, 3, 34);
-      Shape8.addBox(-1.5F, 0F, -2F, 3, 5, 3);
-      Shape8.setRotationPoint(-2F, 11.46667F, 2.5F);
-      Shape8.setTextureSize(128, 64);
-      Shape8.mirror = true;
-      setRotation(Shape8, 0F, 0F, 0F);
-      Shape9 = new ModelPart(this, 0, 34);
-      Shape9.addBox(-1.5F, 0F, -2F, 3, 5, 3);
-      Shape9.setRotationPoint(2F, 11.46667F, 2.5F);
-      Shape9.setTextureSize(128, 64);
-      Shape9.mirror = true;
-      setRotation(Shape9, 0F, 0F, 0F);
-      Shape10 = new ModelPart(this, 28, 55);
-      Shape10.addBox(-2.5F, 0F, -1.6F, 5, 1, 4);
-      Shape10.setRotationPoint(0F, 8.466666F, 1.5F);
-      Shape10.setTextureSize(128, 64);
-      Shape10.mirror = true;
-      setRotation(Shape10, 0F, 0F, 0F);
-      Shape14 = new ModelPart(this, 19, 26);
-      Shape14.addBox(-3.5F, 0F, -2.466667F, 7, 9, 5);
-      Shape14.setRotationPoint(0F, -0.4333333F, 1.733333F);
-      Shape14.setTextureSize(128, 64);
-      Shape14.mirror = true;
-      setRotation(Shape14, 0F, 0F, 0F);
-      Shape15 = new ModelPart(this, 18, 19);
-      Shape15.addBox(-1F, -2.5F, -1F, 2, 3, 2);
-      Shape15.setRotationPoint(0F, -0.4333333F, 2.2F);
-      Shape15.setTextureSize(128, 64);
-      Shape15.mirror = true;
-      setRotation(Shape15, 0F, 0F, 0F);
-      Shape16 = new ModelPart(this, 66, 56);
-      Shape16.addBox(-2.5F, 0.1F, -6F, 5, 1, 6);
-      Shape16.setRotationPoint(0F, -3.433333F, 2.733333F);
-      Shape16.setTextureSize(128, 64);
-      Shape16.mirror = true;
-      setRotation(Shape16, 0.0872665F, 0F, 0F);
-      Shape17 = new ModelPart(this, 0, 13);
-      Shape17.addBox(-2F, 0.1F, -8F, 4, 1, 2);
-      Shape17.setRotationPoint(0F, -3.433333F, 2.733333F);
-      Shape17.setTextureSize(128, 64);
-      Shape17.mirror = true;
-      setRotation(Shape17, 0.0872665F, 0F, 0F);
-      Shape18 = new ModelPart(this, 50, 44);
-      Shape18.addBox(-3F, -6F, -4F, 6, 4, 5);
-      Shape18.setRotationPoint(0F, -2.433333F, 2.733333F);
-      Shape18.setTextureSize(128, 64);
-      Shape18.mirror = true;
-      setRotation(Shape18, 0F, 0F, 0F);
-      Shape19 = new ModelPart(this, 51, 56);
-      Shape19.addBox(-2F, -2F, -2F, 4, 2, 3);
-      Shape19.setRotationPoint(0F, -2.433333F, 2.7F);
-      Shape19.setTextureSize(128, 64);
-      Shape19.mirror = true;
-      setRotation(Shape19, 0F, 0F, 0F);
-      Shape20 = new ModelPart(this, 50, 38);
-      Shape20.addBox(-2.5F, -7F, -3.5F, 5, 1, 4);
-      Shape20.setRotationPoint(0F, -2.433333F, 2.733333F);
-      Shape20.setTextureSize(128, 64);
-      Shape20.mirror = true;
-      setRotation(Shape20, 0F, 0F, 0F);
-      Shape21 = new ModelPart(this, 18, 14);
-      Shape21.addBox(-2F, -3F, -6F, 4, 2, 2);
-      Shape21.setRotationPoint(0F, -2.433333F, 2.733333F);
-      Shape21.setTextureSize(128, 64);
-      Shape21.mirror = true;
-      setRotation(Shape21, 0F, 0F, 0F);
-      Shape22 = new ModelPart(this, 36, 20);
-      Shape22.addBox(-1.5F, -3F, -9F, 3, 2, 3);
-      Shape22.setRotationPoint(0F, -2.433333F, 2.733333F);
-      Shape22.setTextureSize(128, 64);
-      Shape22.mirror = true;
-      setRotation(Shape22, 0F, 0F, 0F);
-      Shape23 = new ModelPart(this, 36, 17);
-      Shape23.addBox(-1F, -1.5F, -0.5F, 2, 1, 1);
-      Shape23.setRotationPoint(0F, -4.433333F, -6.266667F);
-      Shape23.setTextureSize(128, 64);
-      Shape23.mirror = true;
-      setRotation(Shape23, -0.3665191F, 0F, 0F);
-      Shape24 = new ModelPart(this, 34, 11);
-      Shape24.addBox(-1.5F, -5F, -1F, 3, 3, 1);
-      Shape24.setRotationPoint(-2F, -7.433333F, 2.733333F);
-      Shape24.setTextureSize(128, 64);
-      Shape24.mirror = true;
-      setRotation(Shape24, 0F, 0F, -0.8726646F);
-      Shape25 = new ModelPart(this, 34, 11);
-      Shape25.addBox(-1.5F, -5F, -1F, 3, 3, 1);
-      Shape25.setRotationPoint(2F, -7.433333F, 2.733333F);
-      Shape25.setTextureSize(128, 64);
-      Shape25.mirror = true;
-      setRotation(Shape25, 0F, 0F, 0.8726646F);
-      Shape28 = new ModelPart(this, 25, 2);
-      Shape28.addBox(-2F, 0F, -1.5F, 3, 2, 3);
-      Shape28.setRotationPoint(-3.5F, -1F, 2F);
-      Shape28.setTextureSize(128, 64);
-      Shape28.mirror = true;
-      setRotation(Shape28, 0F, 0F, 0.3316126F);
-      Shape29 = new ModelPart(this, 25, 2);
-      Shape29.addBox(-1F, 0F, -1.5F, 3, 2, 3);
-      Shape29.setRotationPoint(3.5F, -1F, 2F);
-      Shape29.setTextureSize(128, 64);
-      Shape29.mirror = true;
-      setRotation(Shape29, 0F, 0F, -0.3316126F);
-      Shape30 = new ModelPart(this, 47, 5);
-      Shape30.addBox(-2F, 0.5333334F, -1F, 2, 5, 2);
-      Shape30.setRotationPoint(-3.5F, 0F, 2F);
-      Shape30.setTextureSize(128, 64);
-      Shape30.mirror = true;
-      setRotation(Shape30, 0F, 0F, 0.2792527F);
-      Shape31 = new ModelPart(this, 47, 5);
-      Shape31.addBox(0F, 0.5333334F, -1F, 2, 5, 2);
-      Shape31.setRotationPoint(3.5F, 0F, 2F);
-      Shape31.setTextureSize(128, 64);
-      Shape31.mirror = true;
-      setRotation(Shape31, 0F, 0F, -0.2792527F);
-      Shape32 = new ModelPart(this, 33, 31);
-      Shape32.addBox(-1.5F, 0.5333334F, -1F, 2, 4, 2);
-      Shape32.setRotationPoint(-5.5F, 4.5F, 2F);
-      Shape32.setTextureSize(128, 64);
-      Shape32.mirror = true;
-      setRotation(Shape32, -0.1047198F, 0F, 0F);
-      Shape33 = new ModelPart(this, 33, 31);
-      Shape33.addBox(-0.5F, 0.5333334F, -1F, 2, 5, 2);
-      Shape33.setRotationPoint(5.5F, 4.5F, 2F);
-      Shape33.setTextureSize(128, 64);
-      Shape33.mirror = true;
-      setRotation(Shape33, -0.1047198F, 0F, 0F);
-      Shape34 = new ModelPart(this, 51, 24);
-      Shape34.addBox(-2F, 4.533333F, -1.5F, 3, 2, 3);
-      Shape34.setRotationPoint(-5.5F, 4.5F, 2F);
-      Shape34.setTextureSize(128, 64);
-      Shape34.mirror = true;
-      setRotation(Shape34, -0.1047198F, 0F, 0F);
-      Shape35 = new ModelPart(this, 51, 31);
-      Shape35.addBox(0F, 5.533333F, -1.633333F, 1, 1, 3);
-      Shape35.setRotationPoint(5.5F, 4.5F, 2F);
-      Shape35.setTextureSize(128, 64);
-      Shape35.mirror = true;
-      setRotation(Shape35, -0.1047198F, 0F, 0F);
-      Shape36 = new ModelPart(this, 64, 32);
-      Shape36.addBox(-1F, -3F, 0F, 1, 2, 0);
-      Shape36.setRotationPoint(0F, -8.433333F, 2.733333F);
-      Shape36.setTextureSize(128, 64);
-      Shape36.mirror = true;
-      setRotation(Shape36, 0F, 0F, -0.4014257F);
-      Shape37 = new ModelPart(this, 64, 32);
-      Shape37.addBox(0F, -3F, 0F, 1, 2, 0);
-      Shape37.setRotationPoint(0F, -8.433333F, 2.733333F);
-      Shape37.setTextureSize(128, 64);
-      Shape37.mirror = true;
-      setRotation(Shape37, 0F, 0F, 0.4014257F);
-      Shape38 = new ModelPart(this, 64, 32);
-      Shape38.addBox(-0.5F, -3F, 0F, 1, 2, 0);
-      Shape38.setRotationPoint(0F, -8.433333F, 2.733333F);
-      Shape38.setTextureSize(128, 64);
-      Shape38.mirror = true;
-      setRotation(Shape38, 0F, 0F, 0F);
-      Shape39 = new ModelPart(this, 20, 9);
-      Shape39.addBox(-1F, -6F, -1F, 2, 1, 1);
-      Shape39.setRotationPoint(-2F, -7.433333F, 2.733333F);
-      Shape39.setTextureSize(128, 64);
-      Shape39.mirror = true;
-      setRotation(Shape39, 0F, 0F, -0.8726646F);
-      Shape40 = new ModelPart(this, 0, 9);
-      Shape40.addBox(-1.5F, 0.1F, -9F, 3, 1, 1);
-      Shape40.setRotationPoint(0F, -3.433333F, 2.733333F);
-      Shape40.setTextureSize(128, 64);
-      Shape40.mirror = true;
-      setRotation(Shape40, 0.0872665F, 0F, 0F);
-      Shape41 = new ModelPart(this, 20, 9);
-      Shape41.addBox(-1F, -2F, -1F, 2, 1, 1);
-      Shape41.setRotationPoint(-2F, -7.433333F, 2.733333F);
-      Shape41.setTextureSize(128, 64);
-      Shape41.mirror = true;
-      setRotation(Shape41, 0F, 0F, -0.8726646F);
-      Shape42 = new ModelPart(this, 20, 9);
-      Shape42.addBox(-1F, -6F, -1F, 2, 1, 1);
-      Shape42.setRotationPoint(2F, -7.433333F, 2.733333F);
-      Shape42.setTextureSize(128, 64);
-      Shape42.mirror = true;
-      setRotation(Shape42, 0F, 0F, 0.8726646F);
-      Shape43 = new ModelPart(this, 20, 9);
-      Shape43.addBox(-1F, -2F, -1F, 2, 1, 1);
-      Shape43.setRotationPoint(2F, -7.433333F, 2.733333F);
-      Shape43.setTextureSize(128, 64);
-      Shape43.mirror = true;
-      setRotation(Shape43, 0F, 0F, 0.8726646F);
-      Shape44 = new ModelPart(this, 12, 8);
-      Shape44.addBox(-0.5F, -7F, -1F, 1, 1, 1);
-      Shape44.setRotationPoint(-2F, -7.433333F, 2.733333F);
-      Shape44.setTextureSize(128, 64);
-      Shape44.mirror = true;
-      setRotation(Shape44, 0F, 0F, -0.8726646F);
-      Shape45 = new ModelPart(this, 12, 8);
-      Shape45.addBox(-0.5F, -7F, -1F, 1, 1, 1);
-      Shape45.setRotationPoint(2F, -7.433333F, 2.733333F);
-      Shape45.setTextureSize(128, 64);
-      Shape45.mirror = true;
-      setRotation(Shape45, 0F, 0F, 0.8726646F);
-      Shape46 = new ModelPart(this, 81, 44);
-      Shape46.addBox(-5F, -2F, -4F, 10, 1, 3);
-      Shape46.setRotationPoint(0F, -2.433333F, 2.733333F);
-      Shape46.setTextureSize(128, 64);
-      Shape46.mirror = true;
-      setRotation(Shape46, 0F, 0F, 0F);
-      Shape47 = new ModelPart(this, 30, 44);
-      Shape47.addBox(-2F, -1F, -1.5F, 2, 1, 2);
-      Shape47.setRotationPoint(-2.666667F, -4.433333F, 0.7333333F);
-      Shape47.setTextureSize(128, 64);
-      Shape47.mirror = true;
-      setRotation(Shape47, 0F, 0F, 0.122173F);
-      Shape48 = new ModelPart(this, 30, 44);
-      Shape48.addBox(0F, -1F, -1.5F, 2, 1, 2);
-      Shape48.setRotationPoint(2.7F, -4.433333F, 0.7333333F);
-      Shape48.setTextureSize(128, 64);
-      Shape48.mirror = true;
-      setRotation(Shape48, 0F, 0F, -0.122173F);
-      Shape49 = new ModelPart(this, 67, 24);
-      Shape49.addBox(-1.5F, 6.533333F, -1F, 2, 1, 2);
-      Shape49.setRotationPoint(-5.5F, 4.5F, 2F);
-      Shape49.setTextureSize(128, 64);
-      Shape49.mirror = true;
-      setRotation(Shape49, -0.1047198F, 0F, 0F);
-      Shape50 = new ModelPart(this, 51, 10);
-      Shape50.addBox(-0.5F, 7.533333F, -2.5F, 0, 5, 5);
-      Shape50.setRotationPoint(-5.5F, 4.5F, 2F);
-      Shape50.setTextureSize(128, 64);
-      Shape50.mirror = true;
-      setRotation(Shape50, -0.1047198F, 0F, 0F);
-      Shape51 = new ModelPart(this, 41, 44);
-      Shape51.addBox(-1.466667F, -2F, 0F, 2, 2, 0);
-      Shape51.setRotationPoint(-1F, -7.533333F, -1.266667F);
-      Shape51.setTextureSize(128, 64);
-      Shape51.mirror = true;
-      setRotation(Shape51, 1.381289F, 0F, 0F);
-      Shape52 = new ModelPart(this, 49, 46);
-      Shape52.addBox(-2.466667F, -1F, -0.1333333F, 2, 2, 1);
-      Shape52.setRotationPoint(0F, -6.5F, -1.266667F);
-      Shape52.setTextureSize(128, 64);
-      Shape52.mirror = true;
-      setRotation(Shape52, 0F, 0F, 0F);
-      Shape53 = new ModelPart(this, 49, 46);
-      Shape53.addBox(0.5F, -1F, -0.1333333F, 2, 2, 1);
-      Shape53.setRotationPoint(0F, -6.5F, -1.266667F);
-      Shape53.setTextureSize(128, 64);
-      Shape53.mirror = true;
-      setRotation(Shape53, 0F, 0F, 0F);
-      Shape54 = new ModelPart(this, 67, 47);
-      Shape54.addBox(-1.7F, -0.1F, -0.2F, 1, 1, 1);
-      Shape54.setRotationPoint(0F, -6.4F, -1.266667F);
-      Shape54.setTextureSize(128, 64);
-      Shape54.mirror = true;
-      setRotation(Shape54, 0F, 0F, 0F);
-      Shape55 = new ModelPart(this, 67, 47);
-      Shape55.addBox(0.7F, -0.1F, -0.2F, 1, 1, 1);
-      Shape55.setRotationPoint(0F, -6.4F, -1.266667F);
-      Shape55.setTextureSize(128, 64);
-      Shape55.mirror = true;
-      setRotation(Shape55, 0F, 0F, 0F);
-      Shape56 = new ModelPart(this, 54, 31);
-      Shape56.addBox(0F, 6.533333F, -1.633333F, 1, 3, 1);
-      Shape56.setRotationPoint(5.5F, 4.5F, 2F);
-      Shape56.setTextureSize(128, 64);
-      Shape56.mirror = true;
-      setRotation(Shape56, -0.122173F, 0F, 0F);
-      Shape57 = new ModelPart(this, 54, 31);
-      Shape57.addBox(0F, 6.533333F, 0.3666667F, 1, 3, 1);
-      Shape57.setRotationPoint(5.5F, 4.5F, 2F);
-      Shape57.setTextureSize(128, 64);
-      Shape57.mirror = true;
-      setRotation(Shape57, -0.0872665F, 0F, 0F);
-      Shape58 = new ModelPart(this, 54, 31);
-      Shape58.addBox(0.3F, 6.533333F, -0.6333333F, 1, 3, 1);
-      Shape58.setRotationPoint(5.5F, 4.5F, 2F);
-      Shape58.setTextureSize(128, 64);
-      Shape58.mirror = true;
-      setRotation(Shape58, -0.1047198F, 0F, 0F);
-      Shape59 = new ModelPart(this, 54, 31);
-      Shape59.addBox(0F, 0.5333334F, -2.633333F, 1, 2, 1);
-      Shape59.setRotationPoint(5.5F, 10.5F, 2F);
-      Shape59.setTextureSize(128, 64);
-      Shape59.mirror = true;
-      setRotation(Shape59, -0.2094395F, 0F, 0.4537856F);
-  }
+	: Shape1(this, 0, 0, 128, 64), Shape2(this, 0, 0, 128, 64), Shape3(this, 0, 18, 128, 64), 
+	  Shape4(this, 0, 18, 128, 64), Shape5(this, 0, 44, 128, 64), Shape6(this, 0, 44, 128, 64),
+	  Shape7(this, 0, 53, 128, 64), Shape8(this, 3, 34, 128, 64), Shape9(this, 0, 34, 128, 64),
+	  Shape10(this, 28, 55, 128, 64), Shape14(this, 19, 26, 128, 64), Shape15(this, 18, 19, 128, 64),
+	  Shape16(this, 66, 56, 128, 64), Shape17(this, 0, 13, 128, 64), Shape18(this, 50, 44, 128, 64),
+	  Shape19(this, 51, 56, 128, 64), Shape20(this, 50, 38, 128, 64), Shape21(this, 18, 14, 128, 64),
+	  Shape22(this, 36, 20, 128, 64), Shape23(this, 36, 17, 128, 64), Shape24(this, 34, 11, 128, 64),
+	  Shape25(this, 34, 11, 128, 64), Shape28(this, 25, 2, 128, 64), Shape29(this, 25, 2, 128, 64),
+	  Shape30(this, 47, 5, 128, 64), Shape31(this, 47, 5, 128, 64), Shape32(this, 33, 31, 128, 64),
+	  Shape33(this, 33, 31, 128, 64), Shape34(this, 51, 24, 128, 64), Shape35(this, 51, 31, 128, 64),
+	  Shape36(this, 64, 32, 128, 64), Shape37(this, 64, 32, 128, 64), Shape38(this, 64, 32, 128, 64),
+	  Shape39(this, 20, 9, 128, 64), Shape40(this, 0, 9, 128, 64), Shape41(this, 20, 9, 128, 64),
+	  Shape42(this, 20, 9, 128, 64), Shape43(this, 20, 9, 128, 64), Shape44(this, 12, 8, 128, 64),
+	  Shape45(this, 12, 8, 128, 64), Shape46(this, 81, 44, 128, 64), Shape47(this, 30, 44, 128, 64),
+	  Shape48(this, 30, 44, 128, 64), Shape49(this, 67, 24, 128, 64), Shape50(this, 51, 10, 128, 64),
+	  Shape51(this, 41, 44, 128, 64), Shape52(this, 49, 46, 128, 64), Shape53(this, 49, 46, 128, 64),
+	  Shape54(this, 67, 47, 128, 64), Shape55(this, 67, 47, 128, 64), Shape56(this, 54, 31, 128, 64),
+	  Shape57(this, 54, 31, 128, 64), Shape58(this, 54, 31, 128, 64), Shape59(this, 54, 31, 128, 64)
+{
+	Shape1.addBox(-1.5F, 0.0F, -6.0F, 3, 1, 6);
+	Shape1.setPos(-2F, 23F, 4F);
+	Shape1.mirror = true;
+	setBoxRotation(&Shape1, 0F, 0F, 0F);
+	
+	Shape2.addBox(-1.5F, 0F, -6F, 3, 1, 6);
+	Shape2.setPos(2F, 23F, 4F);
+	Shape2.mirror = true;
+	setBoxRotation(&Shape2, 0F, 0F, 0F);
+
+	Shape3.addBox(-0.5F, 0F, -0.7F, 1, 6, 1);
+	Shape3.setPos(-2F, 17F, 2F);
+	Shape3.mirror = true;
+	setBoxRotation(&Shape3, 0.122173F, 0F, 0F);
+	
+	Shape4.addBox(-0.5F, 0F, -0.7F, 1, 6, 1);
+	Shape4.setPos(2F, 17F, 2F);
+	Shape4.mirror = true;
+	setBoxRotation(&Shape4, 0.122173F, 0F, 0F);
+	
+	Shape5.addBox(-1F, 0F, -2.5F, 2, 3, 2);
+	Shape5.setPos(-2F, 15F, 2.5F);
+	Shape5.mirror = true;
+	setBoxRotation(&Shape5, 0F, 0F, 0F);
+	
+	Shape6.addBox(-1F, 0F, -2.5F, 2, 3, 2);
+	Shape6.setPos(2F, 15F, 2.5F);
+	Shape6.mirror = true;
+	setBoxRotation(&Shape6, 0F, 0F, 0F);
+	
+	Shape7.addBox(-3.5F, 0F, -2.5F, 7, 2, 5);
+	Shape7.setPos(0F, 9.466666F, 1.7F);
+	Shape7.mirror = true;
+	setBoxRotation(&Shape7, 0F, 0F, 0F);
+	
+	Shape8.addBox(-1.5F, 0F, -2F, 3, 5, 3);
+	Shape8.setPos(-2F, 11.46667F, 2.5F);
+	Shape8.mirror = true;
+	setBoxRotation(&Shape8, 0F, 0F, 0F);
+	
+	Shape9.addBox(-1.5F, 0F, -2F, 3, 5, 3);
+	Shape9.setPos(2F, 11.46667F, 2.5F);
+	Shape9.mirror = true;
+	setBoxRotation(&Shape9, 0F, 0F, 0F);
+	
+	Shape10.addBox(-2.5F, 0F, -1.6F, 5, 1, 4);
+	Shape10.setPos(0F, 8.466666F, 1.5F);
+	Shape10.mirror = true;
+	setBoxRotation(&Shape10, 0F, 0F, 0F);
+	
+	Shape14.addBox(-3.5F, 0F, -2.466667F, 7, 9, 5);
+	Shape14.setPos(0F, -0.4333333F, 1.733333F);
+	Shape14.mirror = true;
+	setBoxRotation(&Shape14, 0F, 0F, 0F);
+	
+	Shape15.addBox(-1F, -2.5F, -1F, 2, 3, 2);
+	Shape15.setPos(0F, -0.4333333F, 2.2F);
+	Shape15.mirror = true;
+	setBoxRotation(&Shape15, 0F, 0F, 0F);
+	
+	Shape16.addBox(-2.5F, 0.1F, -6F, 5, 1, 6);
+	Shape16.setPos(0F, -3.433333F, 2.733333F);
+	Shape16.mirror = true;
+	setBoxRotation(&Shape16, 0.0872665F, 0F, 0F);
+	
+	Shape17.addBox(-2F, 0.1F, -8F, 4, 1, 2);
+	Shape17.setPos(0F, -3.433333F, 2.733333F);
+	Shape17.mirror = true;
+	setBoxRotation(&Shape17, 0.0872665F, 0F, 0F);
+	
+	Shape18.addBox(-3F, -6F, -4F, 6, 4, 5);
+	Shape18.setPos(0F, -2.433333F, 2.733333F);
+	Shape18.mirror = true;
+	setBoxRotation(&Shape18, 0F, 0F, 0F);
+	
+	Shape19.addBox(-2F, -2F, -2F, 4, 2, 3);
+	Shape19.setPos(0F, -2.433333F, 2.7F);
+	Shape19.mirror = true;
+	setBoxRotation(&Shape19, 0F, 0F, 0F);
+	
+	Shape20.addBox(-2.5F, -7F, -3.5F, 5, 1, 4);
+	Shape20.setPos(0F, -2.433333F, 2.733333F);
+	Shape20.mirror = true;
+	setBoxRotation(&Shape20, 0F, 0F, 0F);
+	
+	Shape21.addBox(-2F, -3F, -6F, 4, 2, 2);
+	Shape21.setPos(0F, -2.433333F, 2.733333F);
+	Shape21.mirror = true;
+	setBoxRotation(&Shape21, 0F, 0F, 0F);
+	
+	Shape22.addBox(-1.5F, -3F, -9F, 3, 2, 3);
+	Shape22.setPos(0F, -2.433333F, 2.733333F);
+	Shape22.mirror = true;
+	setBoxRotation(&Shape22, 0F, 0F, 0F);
+	
+	Shape23.addBox(-1F, -1.5F, -0.5F, 2, 1, 1);
+	Shape23.setPos(0F, -4.433333F, -6.266667F);
+	Shape23.mirror = true;
+	setBoxRotation(&Shape23, -0.3665191F, 0F, 0F);
+	
+	Shape24.addBox(-1.5F, -5F, -1F, 3, 3, 1);
+	Shape24.setPos(-2F, -7.433333F, 2.733333F);
+	Shape24.mirror = true;
+	setBoxRotation(&Shape24, 0F, 0F, -0.8726646F);
+	
+	Shape25.addBox(-1.5F, -5F, -1F, 3, 3, 1);
+	Shape25.setPos(2F, -7.433333F, 2.733333F);
+	Shape25.mirror = true;
+	setBoxRotation(&Shape25, 0F, 0F, 0.8726646F);
+	
+	Shape28.addBox(-2F, 0F, -1.5F, 3, 2, 3);
+	Shape28.setPos(-3.5F, -1F, 2F);
+	Shape28.mirror = true;
+	setBoxRotation(&Shape28, 0F, 0F, 0.3316126F);
+
+	Shape29.addBox(-1F, 0F, -1.5F, 3, 2, 3);
+	Shape29.setPos(3.5F, -1F, 2F);
+	Shape29.mirror = true;
+	setBoxRotation(&Shape29, 0F, 0F, -0.3316126F);
+
+	Shape30.addBox(-2F, 0.5333334F, -1F, 2, 5, 2);
+	Shape30.setPos(-3.5F, 0F, 2F);
+	Shape30.mirror = true;
+	setBoxRotation(&Shape30, 0F, 0F, 0.2792527F);
+
+	Shape31.addBox(0F, 0.5333334F, -1F, 2, 5, 2);
+	Shape31.setPos(3.5F, 0F, 2F);
+	Shape31.mirror = true;
+	setBoxRotation(&Shape31, 0F, 0F, -0.2792527F);
+
+	Shape32.addBox(-1.5F, 0.5333334F, -1F, 2, 4, 2);
+	Shape32.setPos(-5.5F, 4.5F, 2F);
+	Shape32.mirror = true;
+	setBoxRotation(&Shape32, -0.1047198F, 0F, 0F);
+
+	Shape33.addBox(-0.5F, 0.5333334F, -1F, 2, 5, 2);
+	Shape33.setPos(5.5F, 4.5F, 2F);
+	Shape33.mirror = true;
+	setBoxRotation(&Shape33, -0.1047198F, 0F, 0F);
+
+	Shape34.addBox(-2F, 4.533333F, -1.5F, 3, 2, 3);
+	Shape34.setPos(-5.5F, 4.5F, 2F);
+	Shape34.mirror = true;
+	setBoxRotation(&Shape34, -0.1047198F, 0F, 0F);
+
+	Shape35.addBox(0F, 5.533333F, -1.633333F, 1, 1, 3);
+	Shape35.setPos(5.5F, 4.5F, 2F);
+	Shape35.mirror = true;
+	setBoxRotation(&Shape35, -0.1047198F, 0F, 0F);
+	
+	Shape36.addBox(-1F, -3F, 0F, 1, 2, 0);
+	Shape36.setPos(0F, -8.433333F, 2.733333F);
+	Shape36.mirror = true;
+	setBoxRotation(&Shape36, 0F, 0F, -0.4014257F);
+	
+	Shape37.addBox(0F, -3F, 0F, 1, 2, 0);
+	Shape37.setPos(0F, -8.433333F, 2.733333F);
+	Shape37.mirror = true;
+	setBoxRotation(&Shape37, 0F, 0F, 0.4014257F);
+	
+	Shape38.addBox(-0.5F, -3F, 0F, 1, 2, 0);
+	Shape38.setPos(0F, -8.433333F, 2.733333F);
+	Shape38.mirror = true;
+	setBoxRotation(&Shape38, 0F, 0F, 0F);
+	
+	Shape39.addBox(-1F, -6F, -1F, 2, 1, 1);
+	Shape39.setPos(-2F, -7.433333F, 2.733333F);
+	Shape39.mirror = true;
+	setBoxRotation(&Shape39, 0F, 0F, -0.8726646F);
+
+	Shape40.addBox(-1.5F, 0.1F, -9F, 3, 1, 1);
+	Shape40.setPos(0F, -3.433333F, 2.733333F);
+	Shape40.mirror = true;
+	setBoxRotation(&Shape40, 0.0872665F, 0F, 0F);
+
+	Shape41.addBox(-1F, -2F, -1F, 2, 1, 1);
+	Shape41.setPos(-2F, -7.433333F, 2.733333F);
+	Shape41.mirror = true;
+	setBoxRotation(&Shape41, 0F, 0F, -0.8726646F);
+
+	Shape42.addBox(-1F, -6F, -1F, 2, 1, 1);
+	Shape42.setPos(2F, -7.433333F, 2.733333F);
+	Shape42.mirror = true;
+	setBoxRotation(&Shape42, 0F, 0F, 0.8726646F);
+
+	Shape43.addBox(-1F, -2F, -1F, 2, 1, 1);
+	Shape43.setPos(2F, -7.433333F, 2.733333F);
+	Shape43.mirror = true;
+	setBoxRotation(&Shape43, 0F, 0F, 0.8726646F);
+
+	Shape44.addBox(-0.5F, -7F, -1F, 1, 1, 1);
+	Shape44.setPos(-2F, -7.433333F, 2.733333F);
+	Shape44.mirror = true;
+	setBoxRotation(&Shape44, 0F, 0F, -0.8726646F);
+
+	Shape45.addBox(-0.5F, -7F, -1F, 1, 1, 1);
+	Shape45.setPos(2F, -7.433333F, 2.733333F);
+	Shape45.mirror = true;
+	setBoxRotation(&Shape45, 0F, 0F, 0.8726646F);
+
+	Shape46.addBox(-5F, -2F, -4F, 10, 1, 3);
+	Shape46.setPos(0F, -2.433333F, 2.733333F);
+	Shape46.mirror = true;
+	setBoxRotation(&Shape46, 0F, 0F, 0F);
+
+	Shape47.addBox(-2F, -1F, -1.5F, 2, 1, 2);
+	Shape47.setPos(-2.666667F, -4.433333F, 0.7333333F);
+	Shape47.mirror = true;
+	setBoxRotation(&Shape47, 0F, 0F, 0.122173F);
+
+	Shape48.addBox(0F, -1F, -1.5F, 2, 1, 2);
+	Shape48.setPos(2.7F, -4.433333F, 0.7333333F);
+	Shape48.mirror = true;
+	setBoxRotation(&Shape48, 0F, 0F, -0.122173F);
+
+	Shape49.addBox(-1.5F, 6.533333F, -1F, 2, 1, 2);
+	Shape49.setPos(-5.5F, 4.5F, 2F);
+	Shape49.mirror = true;
+	setBoxRotation(&Shape49, -0.1047198F, 0F, 0F);
+
+	Shape50.addBox(-0.5F, 7.533333F, -2.5F, 0, 5, 5);
+	Shape50.setPos(-5.5F, 4.5F, 2F);
+	Shape50.mirror = true;
+	setBoxRotation(&Shape50, -0.1047198F, 0F, 0F);
+
+	Shape51.addBox(-1.466667F, -2F, 0F, 2, 2, 0);
+	Shape51.setPos(-1F, -7.533333F, -1.266667F);
+	Shape51.mirror = true;
+	setBoxRotation(&Shape51, 1.381289F, 0F, 0F);
+
+	Shape52.addBox(-2.466667F, -1F, -0.1333333F, 2, 2, 1);
+	Shape52.setPos(0F, -6.5F, -1.266667F);
+	Shape52.mirror = true;
+	setBoxRotation(&Shape52, 0F, 0F, 0F);
+
+	Shape53.addBox(0.5F, -1F, -0.1333333F, 2, 2, 1);
+	Shape53.setPos(0F, -6.5F, -1.266667F);
+	Shape53.mirror = true;
+	setBoxRotation(&Shape53, 0F, 0F, 0F);
+
+	Shape54.addBox(-1.7F, -0.1F, -0.2F, 1, 1, 1);
+	Shape54.setPos(0F, -6.4F, -1.266667F);
+	Shape54.mirror = true;
+	setBoxRotation(&Shape54, 0F, 0F, 0F);
+
+	Shape55.addBox(0.7F, -0.1F, -0.2F, 1, 1, 1);
+	Shape55.setPos(0F, -6.4F, -1.266667F);
+	Shape55.mirror = true;
+	setBoxRotation(&Shape55, 0F, 0F, 0F);
+
+	Shape56.addBox(0F, 6.533333F, -1.633333F, 1, 3, 1);
+	Shape56.setPos(5.5F, 4.5F, 2F);
+	Shape56.mirror = true;
+	setBoxRotation(&Shape56, -0.122173F, 0F, 0F);
+
+	Shape57.addBox(0F, 6.533333F, 0.3666667F, 1, 3, 1);
+	Shape57.setPos(5.5F, 4.5F, 2F);
+	Shape57.mirror = true;
+	setBoxRotation(&Shape57, -0.0872665F, 0F, 0F);
+
+	Shape58.addBox(0.3F, 6.533333F, -0.6333333F, 1, 3, 1);
+	Shape58.setPos(5.5F, 4.5F, 2F);
+	Shape58.mirror = true;
+	setBoxRotation(&Shape58, -0.1047198F, 0F, 0F);
+	
+	Shape59.addBox(0F, 0.5333334F, -2.633333F, 1, 2, 1);
+	Shape59.setPos(5.5F, 10.5F, 2F);
+	Shape59.mirror = true;
+	setBoxRotation(&Shape59, -0.2094395F, 0F, 0.4537856F);
+}
   
-  public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5)
-  {
-    super.render(entity, f, f1, f2, f3, f4, f5);
-    setRotationAngles(f, f1, f2, f3, f4, f5);
+void FoxyModel::render(Entity& entity, float f, float f1, float f2, float f3, float f4, float f5) {
+    setupAnim(f, f1, f2, f3, f4, f5);
     Shape1.render(f5);
     Shape2.render(f5);
     Shape3.render(f5);
@@ -389,18 +347,14 @@ FoxyModel::FoxyModel()
     Shape57.render(f5);
     Shape58.render(f5);
     Shape59.render(f5);
-  }
+}
   
-  private void setRotation(ModelPart model, float x, float y, float z)
-  {
-    model.rotateAngleX = x;
-    model.rotateAngleY = y;
-    model.rotateAngleZ = z;
-  }
+void FoxyModel::setBoxRotation(ModelPart* model, float x, float y, float z) {
+	model->rotateAngleX = x;
+	model->rotateAngleY = y;
+	model->rotateAngleZ = z;
+}
   
-  public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5)
-  {
-    super.setRotationAngles(f, f1, f2, f3, f4, f5, null);
-  }
-
+void FoxyModel::setupAnim(float f, float f1, float f2, float f3, float f4, float f5) {
+	
 }

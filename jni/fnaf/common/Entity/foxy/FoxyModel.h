@@ -67,5 +67,6 @@ public:
 	Foxy();
 	virtual ~Foxy();
 	virtual void render(Entity &, float, float, float, float, float, float);
+	virtual void setupAnim(float, float, float, float, float, float);
 	void setBoxRotation(ModelPart *, float, float, float);
 };
