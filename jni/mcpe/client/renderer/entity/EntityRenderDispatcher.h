@@ -19,7 +19,9 @@ public:
 
 public:
 	// void **vtable;						// 0
-	char filler1[40];						// 4
+	char filler1[12];						// 4
+	Level* level;							// 16
+	char filler2[24];						// 20
 	EntityRenderer *entityRenderers[34];	// 44
 
 public:

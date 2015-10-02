@@ -7,5 +7,5 @@ FoxyRenderer::FoxyRenderer(Model* model, float f) : MobRenderer(model, f) { }
 FoxyRenderer::~FoxyRenderer() { }
 
 FoxyRenderer::bindMobTexture(Mob* mob) {
-	bindTexture()
+	bindTexture(textureName, 0)
 }
